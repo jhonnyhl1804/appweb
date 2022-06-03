@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('placa',10);
             $table->string('color',20);
             $table->string('modelo');
-            $table->integer('idtipo')->unsigned();
+            $table->integer('idtipo')->unsigned()->nullable();
             $table->timestamps();
             $table->softDeletes();
 
